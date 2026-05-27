@@ -1,0 +1,159 @@
+.hero-catalogo{
+
+    padding:120px 8% 70px;
+
+    text-align:center;
+}
+
+.mini-texto{
+
+    color:#5E6B4F;
+
+    font-weight:600;
+
+    text-transform:uppercase;
+
+    letter-spacing:2px;
+
+    font-size:0.9rem;
+}
+
+.hero-catalogo h1{
+
+    margin-top:15px;
+
+    font-size:5rem;
+
+    font-family:'Playfair Display', serif;
+
+    color:#3E4B38;
+}
+
+.hero-catalogo p{
+
+    max-width:700px;
+
+    margin:25px auto 0;
+
+    line-height:1.9;
+
+    color:#666;
+}
+
+/* GRID */
+
+.catalogo-container{
+
+    padding:0 8% 120px;
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(320px,1fr));
+
+    gap:35px;
+}
+
+/* CARD */
+
+.card-produto{
+
+    background:white;
+
+    border-radius:30px;
+
+    overflow:hidden;
+
+    box-shadow:
+    0 15px 40px rgba(0,0,0,0.06);
+
+    transition:0.4s;
+}
+
+.card-produto:hover{
+
+    transform:translateY(-10px);
+}
+
+/* IMAGEM */
+
+.card-produto img{
+
+    width:100%;
+
+    height:380px;
+
+    object-fit:cover;
+}
+
+/* INFO */
+
+.info-produto{
+
+    padding:28px;
+}
+
+.info-produto h3{
+
+    font-size:2rem;
+
+    font-family:'Playfair Display', serif;
+
+    color:#3E4B38;
+
+    margin-bottom:10px;
+}
+
+/* PREÇO */
+
+.preco{
+
+    display:block;
+
+    margin-bottom:18px;
+
+    font-size:1.2rem;
+
+    font-weight:600;
+
+    color:#5E6B4F;
+}
+
+/* TEXTO */
+
+.info-produto p{
+
+    line-height:1.8;
+
+    color:#666;
+
+    margin-bottom:25px;
+}
+
+/* BOTÃO */
+
+.btn-card{
+
+    width:100%;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:40px;
+
+    background:#5E6B4F;
+
+    color:white;
+
+    font-size:1rem;
+
+    cursor:pointer;
+
+    transition:0.3s;
+}
+
+.btn-card:hover{
+
+    background:#3E4B38;
+}
