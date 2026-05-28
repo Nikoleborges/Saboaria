@@ -1,76 +1,71 @@
-const form = document.getElementById("quizForm");
+// js/formulario.js
 
+const formulario = document.getElementById("quizForm");
 const resultado = document.getElementById("resultado");
 
-form.addEventListener("submit", function(event){
+formulario.addEventListener("submit", function(event){
 
     event.preventDefault();
 
-    const nome =
-    document.getElementById("nome").value;
+    const nome = document.getElementById("nome").value;
+    const email = document.getElementById("email").value;
+    const aroma = document.getElementById("aroma").value;
+    const pele = document.getElementById("pele").value;
 
-    const pele =
-    document.getElementById("pele").value;
+    const banho = document.querySelector('input[name="banho"]:checked');
 
-    const aroma =
-    document.getElementById("aroma").value;
-
-    const momento =
-    document.querySelector(
-        'input[name="momento"]:checked'
-    );
-
-    // VALIDAÇÃO
-
-    if(
-        nome === "" ||
-        pele === "" ||
-        aroma === "" ||
-        !momento
-    ){
+    if(nome === "" || email === "" || aroma === "" || pele === "" || !banho){
 
         resultado.style.display = "block";
 
         resultado.innerHTML = `
-            ⚠️ Preencha todas as perguntas
-            para descobrir seu sabonete ideal.
+            ❌ Preencha todos os campos para descobrir seu sabonete ideal.
         `;
+
+        resultado.style.background = "#ffe5e5";
 
         return;
     }
 
     let sabonete = "";
 
-    // RESULTADO
+    // Lógica do quiz
 
-    if(pele === "oleosa"){
-
-        sabonete = "Argila Verde";
-    }
-
-    else if(momento.value === "autoestima"){
-
-        sabonete = "Alta Estima";
+    if(aroma === "floral"){
+        sabonete = "✨ Oxum — delicado, floral e acolhedor.";
     }
 
     else if(aroma === "herbal"){
-
-        sabonete = "Sete Ervas";
+        sabonete = "🌿 Sete Ervas — refrescante e terapêutico.";
     }
 
-    else{
+    else if(aroma === "suave"){
+        sabonete = "🌙 Yemanjá — calmante e leve.";
+    }
 
-        sabonete = "Camomila & Alfazema";
+    else if(aroma === "intenso"){
+        sabonete = "🔥 Xangô — marcante e energizante.";
+    }
+
+    if(pele === "oleosa"){
+        sabonete += "<br><br>💚 Sua pele também combina com a Argila Verde.";
     }
 
     resultado.style.display = "block";
 
+    resultado.style.background = "#edf3ea";
+
     resultado.innerHTML = `
-        ✨ ${nome}, o sabonete ideal para você é:
-        <strong>${sabonete}</strong>!
+        <h3>Resultado para ${nome}</h3>
+
+        <p>
+            O sabonete ideal para você é:
+        </p>
+
+        <strong>${sabonete}</strong>
+
         <br><br>
-        Cada produto da Saboaria das Marias
-        é desenvolvido para transformar seu
-        autocuidado em um momento especial.
+
+        ✨ Obrigada por participar do quiz da Saboaria das Marias.
     `;
 });
