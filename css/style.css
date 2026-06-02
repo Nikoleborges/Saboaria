@@ -57,8 +57,9 @@ body{
 /* LOGO */
 
 .logo{
-
-    width:120px;
+    width:140px;
+    height:140px;
+    object-fit:contain;
 }
 
 /* MENU */
