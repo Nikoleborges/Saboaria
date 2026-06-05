@@ -42,23 +42,22 @@ body{
 /* HEADER */
 
 .header{
-
     width:100%;
-
-    padding:30px 8%;
-
+    padding:25px 8%;
     display:flex;
-
     justify-content:space-between;
-
     align-items:center;
+    position:sticky;
+    top:0;
+    background:var(--fundo);
+    z-index:100;
 }
 
 /* LOGO */
 
 .logo{
-    width:140px;
-    height:140px;
+    width:180px;
+    height:auto;
     object-fit:contain;
 }
 
@@ -92,18 +91,17 @@ body{
 /* HERO */
 
 .hero{
+    min-height:80vh;
 
-    min-height:90vh;
-
-    padding:20px 8% 80px;
+    padding:40px 8%;
 
     display:grid;
 
-    grid-template-columns:1fr 1fr;
+    grid-template-columns:1.1fr 0.9fr;
 
     align-items:center;
 
-    gap:80px;
+    gap:60px;
 }
 
 /* TEXTO */
@@ -133,10 +131,9 @@ body{
 /* TITULO */
 
 .hero-texto h1{
+    font-size:5rem;
 
-    font-size:6rem;
-
-    line-height:1;
+    line-height:0.95;
 
     font-family:'Playfair Display', serif;
 
@@ -146,14 +143,13 @@ body{
 /* DESCRIÇÃO */
 
 .hero-texto p{
+    max-width:550px;
 
-    max-width:520px;
-
-    line-height:1.9;
+    line-height:1.8;
 
     color:var(--texto-claro);
 
-    font-size:1rem;
+    font-size:1.05rem;
 }
 
 /* BOTÃO */
