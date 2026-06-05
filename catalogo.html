@@ -1,258 +1,165 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
 
-<head>
-
-    <meta charset="UTF-8">
-
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Catálogo | Saboaria das Marias</title>
 
     <!-- FONTES -->
-    <link rel="preconnect"
-          href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
 
-    <link rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap"
-          rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- CSS -->
-    <link rel="stylesheet"
-          href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
 
-    <link rel="stylesheet"
-          href="css/catalogo.css">
+    <link rel="stylesheet" href="css/catalogo.css" />
 
-    <link rel="stylesheet"
-          href="css/animacoes.css">
+    <link rel="stylesheet" href="css/animacoes.css" />
 
-    <link rel="stylesheet"
-          href="css/responsivo.css">
+    <link rel="stylesheet" href="css/responsivo.css" />
+  </head>
 
-</head>
-
-<body>
-
+  <body>
     <!-- HEADER -->
     <header class="header">
+      <img
+        src="imagens/logo/logo.png"
+        alt="Logo da Saboaria das Marias"
+        class="logo"
+      />
 
-        <img src="imagens/logo/logo.png"
-             alt="Logo da Saboaria das Marias"
-             class="logo">
+      <nav class="navbar">
+        <ul class="nav-list">
+          <li>
+            <a href="index.html"> Início </a>
+          </li>
 
-        <nav class="navbar">
+          <li>
+            <a href="catalogo.html"> Catálogo </a>
+          </li>
 
-            <ul class="nav-list">
+          <li>
+            <a href="formulario.html"> Quiz </a>
+          </li>
 
-                <li>
-                    <a href="index.html">
-                        Início
-                    </a>
-                </li>
+          <li>
+            <a href="sobre.html"> Sobre </a>
+          </li>
 
-                <li>
-                    <a href="catalogo.html">
-                        Catálogo
-                    </a>
-                </li>
-
-                <li>
-                    <a href="formulario.html">
-                        Quiz
-                    </a>
-                </li>
-
-                <li>
-                    <a href="sobre.html">
-                        Sobre
-                    </a>
-                </li>
-
-                <li>
-                    <a href="contato.html">
-                        Contato
-                    </a>
-                </li>
-
-            </ul>
-
-        </nav>
-
+          <li>
+            <a href="contato.html"> Contato </a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <!-- HERO -->
     <section class="hero-catalogo">
+      <span class="mini-texto"> Produtos artesanais </span>
 
-        <span class="mini-texto">
-            Produtos artesanais
-        </span>
+      <h1>Nossa coleção</h1>
 
-        <h1>
-            Nossa coleção
-        </h1>
+      <p>
+        Sabonetes artesanais desenvolvidos para transformar o banho em um
+        momento especial.
+      </p>
+      <div class="hero-botoes">
 
-        <p>
-            Sabonetes artesanais desenvolvidos para
-            transformar o banho em um momento especial.
-        </p>
-
+        <a href="orixas.html" class="btn-orixas">
+          Conhecer Linha dos Orixás
+        </a>
+      </div>
     </section>
 
     <!-- CATÁLOGO -->
     <main class="catalogo-container">
+      <!-- ARGILA ROSA -->
+      <article class="card-produto">
+        <img
+          src="imagens/produtos/rosto/argila-rosa.png"
+          alt="Sabonete Argila Rosa"
+        />
 
-        <!-- ARGILA ROSA -->
-        <article class="card-produto">
+        <div class="info-produto">
+          <h3>Argila Rosa</h3>
 
-            <img src="imagens/produtos/rosto/argila-rosa.png"
-                 alt="Sabonete Argila Rosa">
+          <span class="preco"> R$ 15,00 </span>
 
-            <div class="info-produto">
+          <p>Hidratação e maciez com óleo de rosa mosqueta.</p>
+        </div>
+      </article>
 
-                <h3>
-                    Argila Rosa
-                </h3>
+      <!-- ARGILA VERDE -->
+      <article class="card-produto">
+        <img
+          src="imagens/produtos/rosto/argila-verde.png"
+          alt="Sabonete Argila Verde"
+        />
 
-                <span class="preco">
-                    R$ 15,00
-                </span>
+        <div class="info-produto">
+          <h3>Argila Verde</h3>
 
-                <p>
-                    Hidratação e maciez com óleo
-                    de rosa mosqueta.
-                </p>
+          <span class="preco"> R$ 15,00 </span>
 
-                <button class="btn-card">
-                    Ver produto
-                </button>
+          <p>Auxilia no controle da oleosidade e limpeza da pele.</p>
+        </div>
+      </article>
 
-            </div>
+      <!-- ARGILA BRANCA -->
+      <article class="card-produto">
+        <img
+          src="imagens/produtos/rosto/argila-branca.png"
+          alt="Sabonete Argila Branca"
+        />
 
-        </article>
+        <div class="info-produto">
+          <h3>Argila Branca</h3>
 
-        <!-- ARGILA VERDE -->
-        <article class="card-produto">
+          <span class="preco"> R$ 15,00 </span>
 
-            <img src="imagens/produtos/rosto/argila-verde.png"
-                 alt="Sabonete Argila Verde">
+          <p>Clareamento suave e cuidado delicado para a pele.</p>
+        </div>
+      </article>
 
-            <div class="info-produto">
+      <!-- ALTA ESTIMA -->
+      <article class="card-produto">
+        <img
+          src="imagens/produtos/femininos/alta-estima.png"
+          alt="Sabonete Alta Estima"
+        />
 
-                <h3>
-                    Argila Verde
-                </h3>
+        <div class="info-produto">
+          <h3>Alta Estima</h3>
 
-                <span class="preco">
-                    R$ 15,00
-                </span>
+          <span class="preco"> R$ 20,00 </span>
 
-                <p>
-                    Auxilia no controle da oleosidade
-                    e limpeza da pele.
-                </p>
+          <p>Rosas vermelhas e pitanga para autocuidado e autoestima.</p>
+        </div>
+      </article>
 
-                <button class="btn-card">
-                    Ver produto
-                </button>
+      <!-- SETE ERVAS -->
+      <article class="card-produto">
+        <img
+          src="imagens/produtos/terapeuticos/sete-ervas.png"
+          alt="Sabonete Sete Ervas"
+        />
 
-            </div>
+        <div class="info-produto">
+          <h3>Sete Ervas</h3>
 
-        </article>
+          <span class="preco"> R$ 20,00 </span>
 
-        <!-- ARGILA BRANCA -->
-        <article class="card-produto">
-
-            <img src="imagens/produtos/rosto/argila-branca.png"
-                 alt="Sabonete Argila Branca">
-
-            <div class="info-produto">
-
-                <h3>
-                    Argila Branca
-                </h3>
-
-                <span class="preco">
-                    R$ 15,00
-                </span>
-
-                <p>
-                    Clareamento suave e cuidado
-                    delicado para a pele.
-                </p>
-
-                <button class="btn-card">
-                    Ver produto
-                </button>
-
-            </div>
-
-        </article>
-
-        <!-- ALTA ESTIMA -->
-        <article class="card-produto">
-
-            <img src="imagens/produtos/femininos/alta-estima.png"
-                 alt="Sabonete Alta Estima">
-
-            <div class="info-produto">
-
-                <h3>
-                    Alta Estima
-                </h3>
-
-                <span class="preco">
-                    R$ 20,00
-                </span>
-
-                <p>
-                    Rosas vermelhas e pitanga
-                    para autocuidado e autoestima.
-                </p>
-
-                <button class="btn-card">
-                    Ver produto
-                </button>
-
-            </div>
-
-        </article>
-
-        <!-- SETE ERVAS -->
-        <article class="card-produto">
-
-            <img src="imagens/produtos/terapeuticos/sete-ervas.png"
-                 alt="Sabonete Sete Ervas">
-
-            <div class="info-produto">
-
-                <h3>
-                    Sete Ervas
-                </h3>
-
-                <span class="preco">
-                    R$ 20,00
-                </span>
-
-                <p>
-                    Fórmula artesanal relaxante
-                    com ervas naturais.
-                </p>
-
-                <button class="btn-card">
-                    Ver produto
-                </button>
-
-            </div>
-
-        </article>
-
+          <p>Fórmula artesanal relaxante com ervas naturais.</p>
+        </div>
+      </article>
     </main>
-
-</body>
-
+  </body>
 </html>
