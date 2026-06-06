@@ -1,143 +1,129 @@
-<!-- formulario.html -->
 <!doctype html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Quiz | Saboaria das Marias</title>
 
-    <!-- FONTES -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
+<head>
 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap"
-      rel="stylesheet"
-    />
+<title>Quiz | Saboaria das Marias</title>
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/formulario.css" />
-  </head>
-  <body>
-    <header>
-      <nav class="menu">
-        <img
-          src="imagens/logo/logo.png"
-          alt="Logo da Saboaria das Marias"
-          class="logo"
-        />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-        <ul>
-          <li><a href="index.html">Início</a></li>
-          <li><a href="catalogo.html">Catálogo</a></li>
-          <li><a href="formulario.html">Quiz</a></li>
-          <li><a href="sobreamarca.html">Sobre</a></li>
-          <li><a href="contato.html">Contato</a></li>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/formulario.css">
+
+</head>
+
+<body>
+
+<header class="header">
+
+    <img src="imagens/logo/logo.png"
+         alt="Logo da Saboaria das Marias"
+         class="logo">
+
+    <nav class="navbar">
+
+        <ul class="nav-list">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="catalogo.html">Catálogo</a></li>
+            <li><a href="formulario.html">Quiz</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="contato.html">Contato</a></li>
         </ul>
-      </nav>
-    </header>
 
-    <main class="quiz-container">
-      <section class="quiz-box">
+    </nav>
+
+</header>
+
+<main class="quiz-container">
+
+    <section class="quiz-box">
+
         <h2>Qual sabonete combina com você?</h2>
 
         <p class="subtitulo">
-          Descubra qual linha da Saboaria das Marias combina mais com sua
-          energia ✨
+            Descubra qual linha da Saboaria das Marias combina mais com sua energia ✨
         </p>
 
         <form id="quizForm">
-          <!-- Nome -->
-          <div class="campo">
-            <label for="nome">Seu nome</label>
 
-            <input type="text" id="nome" placeholder="Digite seu nome" />
-          </div>
-
-          <!-- Email -->
-          <div class="campo">
-            <label for="email">Seu email</label>
-
-            <input type="email" id="email" placeholder="Digite seu email" />
-          </div>
-
-          <!-- Aroma -->
-          <div class="campo">
-            <label for="aroma">Qual aroma você prefere?</label>
-
-            <select id="aroma">
-              <option value="">Escolha</option>
-              <option value="floral">Floral</option>
-              <option value="herbal">Herbal</option>
-              <option value="suave">Suave</option>
-              <option value="intenso">Intenso</option>
-            </select>
-          </div>
-
-          <!-- Tipo de banho -->
-          <div class="campo">
-            <label>Como você quer se sentir após o banho?</label>
-
-            <div class="opcoes">
-              <label>
-                <input type="radio" name="banho" value="relaxada" />
-                Relaxada
-              </label>
-
-              <label>
-                <input type="radio" name="banho" value="energizada" />
-                Energizada
-              </label>
-
-              <label>
-                <input type="radio" name="banho" value="leve" />
-                Leve
-              </label>
+            <div class="campo">
+                <label for="nome">Seu nome</label>
+                <input type="text" id="nome" placeholder="Digite seu nome">
             </div>
-          </div>
 
-          <!-- Tipo de pele -->
-          <div class="campo">
-            <label for="pele">Seu tipo de pele</label>
-
-            <select id="pele">
-              <option value="">Escolha</option>
-              <option value="oleosa">Oleosa</option>
-              <option value="seca">Seca</option>
-              <option value="mista">Mista</option>
-            </select>
-          </div>
-
-          <!-- Interesse -->
-          <div class="campo">
-            <label>O que você procura?</label>
-
-            <div class="checkbox-group">
-              <label>
-                <input type="checkbox" value="autoestima" />
-                Autoestima
-              </label>
-
-              <label>
-                <input type="checkbox" value="relaxamento" />
-                Relaxamento
-              </label>
-
-              <label>
-                <input type="checkbox" value="limpeza" />
-                Limpeza energética
-              </label>
+            <div class="campo">
+                <label for="email">Seu email</label>
+                <input type="email" id="email" placeholder="Digite seu email">
             </div>
-          </div>
 
-          <button type="submit" class="btn-quiz">Descobrir meu sabonete</button>
+            <div class="campo">
+                <label for="aroma">Qual aroma você prefere?</label>
+
+                <select id="aroma">
+                    <option value="">Escolha</option>
+                    <option value="floral">Floral</option>
+                    <option value="herbal">Herbal</option>
+                    <option value="suave">Suave</option>
+                    <option value="intenso">Intenso</option>
+                </select>
+            </div>
+
+            <div class="campo">
+
+                <label>Como você quer se sentir após o banho?</label>
+
+                <div class="opcoes">
+                    <label><input type="radio" name="banho" value="relaxada"> Relaxada</label>
+                    <label><input type="radio" name="banho" value="energizada"> Energizada</label>
+                    <label><input type="radio" name="banho" value="leve"> Leve</label>
+                </div>
+
+            </div>
+
+            <div class="campo">
+
+                <label for="pele">Seu tipo de pele</label>
+
+                <select id="pele">
+                    <option value="">Escolha</option>
+                    <option value="oleosa">Oleosa</option>
+                    <option value="seca">Seca</option>
+                    <option value="mista">Mista</option>
+                </select>
+
+            </div>
+
+            <div class="campo">
+
+                <label>O que você procura?</label>
+
+                <div class="checkbox-group">
+                    <label><input type="checkbox" value="autoestima"> Autoestima</label>
+                    <label><input type="checkbox" value="relaxamento"> Relaxamento</label>
+                    <label><input type="checkbox" value="limpeza"> Limpeza Energética</label>
+                </div>
+
+            </div>
+
+            <button type="submit" class="btn-quiz">
+                Descobrir meu sabonete
+            </button>
+
         </form>
 
         <div id="resultado"></div>
-      </section>
-    </main>
 
-    <script src="js/formulario.js"></script>
-  </body>
+    </section>
+
+</main>
+
+<script src="js/formulario.js"></script>
+
+</body>
 </html>
