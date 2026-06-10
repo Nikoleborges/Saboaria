@@ -5,25 +5,21 @@
 
     <meta charset="UTF-8">
 
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Saboaria das Marias</title>
+    <title>Contato — Saboaria das Marias</title>
 
     <!-- FONTES -->
-    <link rel="preconnect"
-          href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
 
-    <link rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap"
-          rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
 
     <!-- CSS -->
-    <link rel="stylesheet"
-          href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 
 </head>
 
@@ -32,49 +28,164 @@
     <!-- HEADER -->
     <header class="header">
 
-        <img src="imagens/logo/logo.png"
-             alt="Logo da Saboaria das Marias"
-             class="logo">
+        <img src="imagens/logo/logo.png" alt="Logo da Saboaria das Marias" class="logo">
 
         <nav>
 
             <ul class="nav-list">
 
-                <li>
-                    <a href="index.html">
-                        Início
-                    </a>
-                </li>
-
-                <li>
-                    <a href="catalogo.html">
-                        Catálogo
-                    </a>
-                </li>
-
-                <li>
-                    <a href="formulario.html">
-                        Quiz
-                    </a>
-                </li>
-
-                <li>
-                    <a href="sobre.html">
-                        Sobre
-                    </a>
-                </li>
-
-                <li>
-                    <a href="contato.html">
-                        Contato
-                    </a>
-                </li>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="catalogo.html">Catálogo</a></li>
+                <li><a href="formulario.html">Quiz</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="contato.html">Contato</a></li>
 
             </ul>
 
         </nav>
 
     </header>
+
+    <!-- HERO CONTATO -->
+    <main class="hero hero-sobre hero-contato">
+
+        <section class="hero-texto">
+
+            <span class="mini-texto">
+                FALE CONOSCO
+            </span>
+
+            <h1>
+                Entre em contato
+            </h1>
+
+            <p>
+                Será um prazer fazer parte do seu momento
+                de autocuidado. Entre em contato e conheça
+                mais sobre os produtos artesanais da
+                Saboaria das Marias.
+            </p>
+
+        </section>
+
+    </main>
+
+    <!-- SEÇÃO CONTATO -->
+    <section class="contato-secao">
+
+        <!-- INFORMAÇÕES -->
+        <div class="contato-info">
+
+            <h2>Como falar com a gente</h2>
+
+            <p class="contato-descricao">
+                Estamos disponíveis para encomendas, dúvidas,
+                presentes personalizados e pedidos especiais.
+            </p>
+
+            <ul class="contato-lista">
+
+                <li>
+                    <span class="contato-label">WhatsApp</span>
+                    <a href="https://wa.me/5535997736715" target="_blank">
+                        (35) 99773-6715
+                    </a>
+                </li>
+
+                <li>
+                    <span class="contato-label">Instagram</span>
+                    <a href="https://instagram.com/smsaboariadasmariaas" target="_blank">
+                        @smsaboariadasmariaas
+                    </a>
+                </li>
+
+                <li>
+                    <span class="contato-label">Horário de atendimento</span>
+                    <span>Segunda a sexta: 09h às 18h</span>
+                    <span>Sábado: 09h às 13h</span>
+                </li>
+
+            </ul>
+
+            <a href="https://wa.me/5535997736715" target="_blank" class="btn-principal">
+                Falar no WhatsApp
+            </a>
+
+        </div>
+
+        <!-- FORMULÁRIO -->
+        <div class="contato-formulario">
+
+            <h2>Mande uma mensagem</h2>
+
+            <form class="form-contato">
+
+                <div class="form-grupo">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" placeholder="Seu nome completo">
+                </div>
+
+                <div class="form-grupo">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" placeholder="seuemail@exemplo.com">
+                </div>
+
+                <div class="form-grupo">
+                    <label for="assunto">Assunto</label>
+                    <select id="assunto">
+                        <option value="">Selecione um assunto</option>
+                        <option>Encomenda</option>
+                        <option>Presente personalizado</option>
+                        <option>Dúvida sobre produtos</option>
+                        <option>Pedido especial</option>
+                    </select>
+                </div>
+
+                <div class="form-grupo">
+                    <label for="mensagem">Mensagem</label>
+                    <textarea id="mensagem" rows="5" placeholder="Escreva sua mensagem..."></textarea>
+                </div>
+
+                <button type="submit" class="btn-principal">
+                    Enviar mensagem
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <!-- NAVEGAÇÃO FINAL -->
+<section class="contato-nav">
+
+    <p class="mini-texto">EXPLORE MAIS</p>
+
+    <div class="contato-nav-botoes">
+
+        <a href="catalogo.html"
+           class="btn-outline">
+            Ver catálogo
+        </a>
+
+        <a href="orixas.html"
+           class="btn-outline">
+            Conhecer a linha Orixás
+        </a>
+
+        <a href="index.html"
+           class="btn-outline">
+            Voltar para o início
+        </a>
+
+    </div>
+
+</section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>© 2025 Saboaria das Marias — Transformando cuidado em experiência.</p>
+    </footer>
 
 </body>
 
